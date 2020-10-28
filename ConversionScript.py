@@ -130,7 +130,7 @@ class Conversion:
         pngSet=set()
         wordSet=set()
         fileList=[]
-        with open(r'C:\Users\umaraftab\Desktop\filesDone.txt','r') as f:
+        with open(r'filesDone.txt','r') as f:
             listWord='100%'
             listNum='1/1'
             for line in f:
@@ -233,9 +233,9 @@ class Conversion:
 conv = Conversion()
 
 
-pdf_count,pdf_set=conv.count_pdf('\\\\healthy.bewell.ca\\apps\\CIS-DM\\Landing\\OTTR_Prod\\OTTR1')
-doc_count_OTTR,doc_set_OTTR=conv.count_docs('\\\\healthy.bewell.ca\\apps\\CIS-DM\\Landing\\OTTR_Prod\\OTTR1')
-doc_count_ARCH,doc_set_ARCH=conv.count_docs('\\\\healthy.bewell.ca\\apps\\CIS-DM\\Landing\\OTTR_Prod\\OTTR1')
+pdf_count,pdf_set=conv.count_pdf()
+doc_count_OTTR,doc_set_OTTR=conv.count_docs('')
+doc_count_ARCH,doc_set_ARCH=conv.count_docs()
 completed_set=conv.count_docs_completed()
 
 
